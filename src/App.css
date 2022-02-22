@@ -39,8 +39,9 @@
 
 body {
   background-color: #121829;
-  background-image: url(../public/images/background.png);
+  background-image: url(../src/images/background.png);
   background-position: top;
   background-repeat: repeat-y;
+  background-size: cover;
   
 }

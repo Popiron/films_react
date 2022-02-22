@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 120px;
+    padding-right: 120px;
+
+    position: relative;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+
+
+
+    background: rgba(18, 24, 41, 0.8);
+    backdrop-filter: blur(40px);
+}
+
+.button {
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
