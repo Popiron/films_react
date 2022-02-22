@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: #121829;
+  background-image: url(../public/images/background.png);
+  background-position: top;
+  background-repeat: repeat-y;
+  
+}
