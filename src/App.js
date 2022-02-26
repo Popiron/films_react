@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
-import {Navbar} from './components/navbar/navbar.js'
+import {Navbar} from './components/navbar/navbar.js';
+import {MoviePoster} from './components/movie_poster/moviePoster.js';
 
 const welcome = {
   greeting: "Hey",
@@ -53,6 +54,7 @@ const App = () => {
   return (
     <>
       <Navbar/>
+      <MoviePoster/>
     </>
   );
 }

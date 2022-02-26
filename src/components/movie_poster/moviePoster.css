@@ -1,0 +1,93 @@
+.background {
+    position: absolute;
+    height: 480px;
+    width: 282px;
+    border-radius: 12px;
+    background-color: #20283ECC;
+}
+
+.poster {
+    position:relative;
+    height: 400px;
+    width: 266px;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.img.poster {
+    padding: 0px;
+}
+
+.title {
+    position: relative;
+    bottom: 8px;
+    left: 8px;
+    color: #EBEEF5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    position: absolute;
+    width: 60px;
+    height: 40px;
+    left: 16px;
+    top: 18px;
+
+    /* Black/65 */
+
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 8px;
+}
+
+h4{
+    position: static;
+    width: 24px;
+    height: 24px;
+    left: 28px;
+    top: 8px;
+    
+    /* Body/Regular */
+    
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    
+    /* Warning/500 */
+    
+    color: #FFAD49;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+
+    text-align: center;
+       
+}
+
+.star {
+    position: static;
+    width: 16px;
+    height: 16px;
+    margin-bottom: 2px;
+    margin-left: 6px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

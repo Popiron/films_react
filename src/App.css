@@ -42,6 +42,6 @@ body {
   background-image: url(../src/images/background.png);
   background-position: top;
   background-repeat: repeat-y;
-  background-size: cover;
+  background-size:cover;
   
 }
