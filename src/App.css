@@ -45,3 +45,7 @@ body {
   background-size:cover;
   
 }
+
+.movies_grid {
+  padding: 50px 120px;
+}
