@@ -1,12 +1,40 @@
-input {
+.container{
+    position: static;
     display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 120px;
+    margin-top: 20px;
 
-position: absolute;
-width: 344px;
-height: 64px;
-left: 120px;
-top: 264px;
 }
+
+input {
+    background: rgba(0, 0, 0, 0.1);
+
+    border: 1px solid #323B54;
+    box-sizing: border-box;
+    border-radius: 12px;
+    height: 40px;
+    width: 20%;
+
+    padding: 10px;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    height: 40px;
+    margin-left: 10px;
+    align-items: center;
+    background: #7B6EF6;
+
+    border: 2px solid #7B6EF6;
+    border-radius: 12px;
+}
+
+.icon{
+    stroke: white;
+}
+
