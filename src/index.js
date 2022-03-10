@@ -4,21 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-
-const reducer = (state, action) => {
-  switch (action.type){
-    case "ADD_CASH":
-      return {...state, cash: state.cash + action.payload}
-    case "ADD_CASH":
-      break;  
-    default:
-      return state;
-  }
-}
-
+import { store } from './store';
 
 ReactDOM.render(
-    <App/>,
+  <Provider store = {store}>
+        <App/>,
+  </Provider>,
   document.getElementById('root')
 );
 

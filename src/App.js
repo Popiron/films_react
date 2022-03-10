@@ -1,11 +1,12 @@
 import './App.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Navbar} from './components/navbar/navbar.js';
 import {MoviePoster} from './components/movie_poster/moviePoster.js';
 import Grid from '@mui/material/Grid';
 import { SearchBar } from './components/search_bar/search_bar.js';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchPopularMovies } from './asyncActions/movies';
 
-const API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YTAyZjM1ODk1ODlhZDhlNDQ4ODg4YTA2OWM0NjY0OSIsInN1YiI6IjVmZDVlMjk0NDE0MjkxMDAzZjQ1ZjYxMiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.JPC-r71EYBFa-YmxB-VeZzfAowne0A_SQvYrBgCs07E";
 
 
 
@@ -101,7 +102,14 @@ const data = [
   },
 ]
 
+
+
 const App = () => {
+  const dispatch = useDispatch();
+  const movies = useSelector(state=>state.movies.movies);
+  useEffect(() => {
+    fetchPopularMovies(dispatch);
+  }, []);
 
   return (
     <>
@@ -111,11 +119,11 @@ const App = () => {
       </div>
       <SearchBar/>
       <div className='search_count'>
-        120 items
+        {movies.page} items
       </div>
       <div className='movies_grid'>
-      {data.map((element, index) => (
-            <MoviePoster rating={element.rating} title={element.title} imgUrl={element.imgUrl}/>
+      {movies.results.map((element, index) => (
+            <MoviePoster rating={element.vote_average} title={element.original_title} imgUrl={"https://image.tmdb.org/t/p/w500/"+element.poster_path}/>
       ))}
       </div>
       
