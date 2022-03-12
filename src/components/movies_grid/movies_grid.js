@@ -12,12 +12,12 @@ export const MoviesGrid = () => {
 
     const movies = useSelector(state=>state.movies);
     const [fetching, setFetching] = useState(true);
-    const [init,setInit] = useState(true);
 
-    const fetchPopularMovies = () => {
+
+    const fetchMoreMovies = () => {
         if (fetching) {
             setFetching(false);
-            MoviesApi.fetchPopularMovies(dispatch).then(
+            MoviesApi.loadMore(dispatch).then(
                 ()=> {
                     setFetching(true);
                 }
@@ -27,17 +27,15 @@ export const MoviesGrid = () => {
 
 
     useEffect(() => {
-        if (init) {
-            fetchPopularMovies();
-            setInit(false);
-        }
-    }, [init]);
+        MoviesApi.fetchPopularMovies(dispatch);
+        
+    }, []);
 
 
     const scrollHandler = (e) => {
         if (e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 100 && fetching) {
             setFetching(false);
-            fetchPopularMovies();
+            fetchMoreMovies();
         }
     }
 
@@ -51,7 +49,7 @@ export const MoviesGrid = () => {
     return (
     <>
     <div className='search_count'>
-     items
+     {movies.length} items
     </div>,
     <div className='movies_grid'>   
     {movies?.map((element, index) => (
