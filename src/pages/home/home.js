@@ -6,7 +6,7 @@ import './home.css';
 export const Home = () => {
     return (
       <>
-        <Navbar/>
+        <Navbar isInsideProfile={false}/>
         <div className='main_title'>
           Movies
         </div>

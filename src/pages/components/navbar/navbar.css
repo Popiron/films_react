@@ -19,7 +19,12 @@
     backdrop-filter: blur(40px);
 }
 
-.button {
+.navbutton {
     color: aliceblue;
     font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
 }

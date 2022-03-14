@@ -1,0 +1,58 @@
+.box2 .main_title {
+    height: 80px;
+  
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    text-align: start;
+    letter-spacing: -0.02em;
+    margin:0px;
+  
+    color: #EBEEF5;
+  
+  }
+
+  .wrapper {
+      margin-top: 60px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+
+  .logo {
+    margin: 10px 100px;
+    object-fit: contain;
+  }
+
+  .box2 input {
+    background: rgba(0, 0, 0, 0.1);
+
+    border: 1px solid #323B54;
+    box-sizing: border-box;
+    border-radius: 12px;
+    height: 64px;
+    width: 50%;
+
+    padding: 10px;
+
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.box2 button {
+    width: 50%;
+    margin: 0px;
+    margin-top: 20px;
+    color: white;
+
+    font-family: 'Poppins', sans-serif;
+}
