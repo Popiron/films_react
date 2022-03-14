@@ -1,11 +1,9 @@
 import { useDispatch, useSelector } from 'react-redux';
 import React, { useEffect, useState } from 'react';
-import { fetchPopularMovies, MoviesApi } from '../../asyncActions/movies';
+import { MoviesApi } from '../../../asyncActions/movies';
 import { MoviePoster } from '../movie_poster/moviePoster';
-import ProgressButton from 'react-progress-button'
 
 import './movies_grid.css';
-import { loadPopularMoviesAction } from '../../store/moviesReducer';
 
 export const MoviesGrid = () => {
     const dispatch = useDispatch();

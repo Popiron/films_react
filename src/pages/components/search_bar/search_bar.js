@@ -1,8 +1,7 @@
-import SearchInput from 'react-search-input'
 import './search_bar.css';
-import {ReactComponent as SearchIcon} from  '../../images/search.svg';
+import {ReactComponent as SearchIcon} from  '../../../images/search.svg';
 import { useDispatch } from 'react-redux';
-import { MoviesApi } from '../../asyncActions/movies';
+import { MoviesApi } from '../../../asyncActions/movies';
 import { useState } from 'react';
 
 

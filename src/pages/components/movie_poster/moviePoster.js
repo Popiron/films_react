@@ -1,5 +1,5 @@
 import './moviePoster.css';
-import {ReactComponent as Star} from  '../../images/star.svg';
+import {ReactComponent as Star} from  '../../../images/star.svg';
 
 export const MoviePoster = ({imgUrl, rating, title}) => {
     return (
