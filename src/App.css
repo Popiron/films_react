@@ -36,37 +36,3 @@
     transform: rotate(360deg);
   }
 }
-
-body {
-  background-color: #121829;
-  background-image: url(../src/images/background.png);
-  background-position: top;
-  background-repeat: repeat-y;
-  background-size:cover;
-  
-}
-
-
-
-.main_title {
-  margin-top: 10px;
-  margin-left: 120px;
-  width: 223px;
-  height: 80px;
-
-  /* Heading/H1 */
-
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 80px;
-  /* identical to box height, or 125% */
-
-  letter-spacing: -0.02em;
-
-  /* Grey/50 */
-
-  color: #EBEEF5;
-
-}
