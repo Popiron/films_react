@@ -1,4 +1,4 @@
-.header {
+#header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,12 +19,12 @@
     backdrop-filter: blur(40px);
 }
 
-.navbutton {
+#navbutton {
     color: aliceblue;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
 }
 
-.link {
+#link {
     text-decoration: none;
 }

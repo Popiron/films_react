@@ -1,4 +1,4 @@
-.box2 .main_title {
+#profile_title {
     height: 80px;
   
     font-family: Poppins;
@@ -13,25 +13,25 @@
   
   }
 
-  .wrapper {
+  #wrapper {
       margin-top: 60px;
       width: 100%;
       display: grid;
       grid-template-columns: 1fr 1fr;
   }
 
-  .box2 {
+  #box2 {
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
   }
 
-  .logo {
+  #logo {
     margin: 10px 100px;
     object-fit: contain;
   }
 
-  .box2 input {
+  #box2 input {
     background: rgba(0, 0, 0, 0.1);
 
     border: 1px solid #323B54;
@@ -46,13 +46,21 @@
 
     font-family: 'Poppins', sans-serif;
     margin-top: 20px;
+
+    
 }
 
-.box2 button {
+#box2 button {
     width: 50%;
-    margin: 0px;
     margin-top: 20px;
     color: white;
+    height: 40px;
+    align-items: center;
+    background: #7B6EF6;
+
+    border: 2px solid #7B6EF6;
+    border-radius: 12px;
+    cursor: pointer;
 
     font-family: 'Poppins', sans-serif;
 }

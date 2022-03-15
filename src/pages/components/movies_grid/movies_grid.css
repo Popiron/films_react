@@ -1,4 +1,4 @@
-.movies_grid {
+#movies_grid {
     padding: 10px 120px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);

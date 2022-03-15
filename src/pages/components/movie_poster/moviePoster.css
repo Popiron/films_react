@@ -1,4 +1,4 @@
-.background {
+#background {
     position: absolute;
     height: 480px;
     width: 282px;
@@ -7,26 +7,27 @@
 }
 
 .poster {
-    position:relative;
+    position:absolute;
     height: 400px;
     width: 266px;
     padding: 8px;
     border-radius: 12px;
 }
 
-.img.poster {
+ .img.poster {
     padding: 0px;
 }
 
-.title {
-    position: relative;
-    bottom: 8px;
-    left: 8px;
+#title {
+    width: 100%;
+    position: absolute;
     color: #EBEEF5;
     font-family: 'Poppins', sans-serif;
+    bottom: 0px;
+    left: 8px;
 }
 
-.rating {
+#rating {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,7 +48,7 @@
     border-radius: 8px;
 }
 
-h4{
+#rating_title{
     position: static;
     width: 24px;
     height: 24px;
@@ -80,7 +81,7 @@ h4{
        
 }
 
-.star {
+#star {
     position: static;
     width: 16px;
     height: 16px;

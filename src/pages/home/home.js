@@ -7,7 +7,7 @@ export const Home = () => {
     return (
       <>
         <Navbar isInsideProfile={false}/>
-        <div className='main_title'>
+        <div id='main_title'>
           Movies
         </div>
         <SearchBar/>

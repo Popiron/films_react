@@ -6,21 +6,21 @@ export const Navbar = (props) => {
 
   return (
     <>
-      <header className="header" height="80px">
+      <header id="header" height="80px">
         <Link to="/movies">
         <Logo height="40px" width="40px" />
         </Link>
         {props.isInsideProfile ? (
           (props.isAuthorized &&
-          <Link className="link" to="/movies" onClick={()=>{
+          <Link id="link" to="/movies" onClick={()=>{
             localStorage.setItem('authorized','false');
         }}>
-            <h2 className="navbutton">Log out</h2>
+            <h2 id="navbutton">Log out</h2>
           </Link>)
         ) :
           (
-            <Link className="link" to="/profile">
-            <h2 className="navbutton">Profile</h2>
+            <Link id="link" to="/profile">
+            <h2 id="navbutton">Profile</h2>
             </Link>
           )
         }

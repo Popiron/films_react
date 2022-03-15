@@ -9,10 +9,10 @@ export const SearchBar = () => {
   const [searchText, setSearchText] = useState("");
   const dispatch = useDispatch();
   return (
-    <div className='container'>
-        <input type="text" placeholder='Search Films' value={searchText} onChange={(event)=>{setSearchText(event.target.value)}} ></input>
-        <button type='button' onClick={()=>{MoviesApi.fetchMoviesByText(dispatch,searchText);}} disabled={false}>
-        <SearchIcon className='icon' color='#FFFFFF'/>
+    <div id='container'>
+        <input id='search_input' type="text" placeholder='Search Films' value={searchText} onChange={(event)=>{setSearchText(event.target.value)}} ></input>
+        <button id='search_button' type='button' onClick={()=>{MoviesApi.fetchMoviesByText(dispatch,searchText);}} disabled={false}>
+        <SearchIcon id='icon' color='#FFFFFF'/>
         </button>
 
     </div>

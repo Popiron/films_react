@@ -1,3 +1,4 @@
+import { loadMovieDetailsAction } from "../store/detailsReducer";
 import { loadMoviesByTextAction, loadNewMoviesByTextAction, loadNewPopularMoviesAction, loadPopularMoviesAction } from "../store/moviesReducer";
 
 export class MoviesApi {
@@ -60,6 +61,14 @@ export class MoviesApi {
             await this.fetchMoviesByText(dispatch, this.#searchText);
         } else {
             await this.fetchPopularMovies(dispatch);
+        }
+    }
+
+    static fetchMovieDetails = async (dispatch, movieId) => {
+        var details = await fetch(`${this.#URL}movie/${movieId}?api_key=${this.#API_KEY}`);
+        if (details.status == 200) {
+            var json = await details.json();
+            dispatch(loadMovieDetailsAction(json));
         }
     }
 }

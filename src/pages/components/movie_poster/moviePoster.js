@@ -1,21 +1,22 @@
 import './moviePoster.css';
 import {ReactComponent as Star} from  '../../../images/star.svg';
+import { Link } from 'react-router-dom';
 
-export const MoviePoster = ({imgUrl, rating, title}) => {
+export const MoviePoster = ({movieId,imgUrl, rating, title}) => {
     return (
     <div>
-        <div className='background'>
+        <div id='background'>
         <div className='poster'>
-            <a href=''>
+            <Link key={movieId} to={`/movies/${movieId}`}>
             <img className='img poster' src={imgUrl}></img>
 
-            </a>
-            <div className='rating'>
-                <Star className='star'/>
-                <h4>{rating}</h4>
+            </Link>
+            <div id='rating'>
+                <Star id='star'/>
+                <h4 id='rating_title'>{rating}</h4>
             </div>
         </div>
-        <h3 className='title'>{title}</h3>
+        <h3 id='title'>{title}</h3>
     </div>
     </div>    
     );

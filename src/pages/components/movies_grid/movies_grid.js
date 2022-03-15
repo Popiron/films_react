@@ -46,9 +46,9 @@ export const MoviesGrid = () => {
 
     return (
     <>
-    <div className='movies_grid'>   
+    <div id='movies_grid'>   
     {movies?.map((element, index) => (
-          <MoviePoster rating={element.vote_average} title={element.original_title} imgUrl={"https://image.tmdb.org/t/p/w500/"+element.poster_path}/>
+          <MoviePoster movieId={element.id} rating={element.vote_average} title={element.original_title} imgUrl={"https://image.tmdb.org/t/p/w500/"+element.poster_path}/>
     ))}
     </div>
 
