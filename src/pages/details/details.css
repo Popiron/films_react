@@ -1,3 +1,8 @@
+#backdrop {
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
 #box1 {
     display: table-row;
     position: absolute;

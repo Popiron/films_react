@@ -1,16 +1,20 @@
 import './moviePoster.css';
 import {ReactComponent as Star} from  '../../../images/star.svg';
-import { Link } from 'react-router-dom';
+import { MoviesApi } from '../../../asyncActions/movies';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router';
 
 export const MoviePoster = ({movieId,imgUrl, rating, title}) => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     return (
     <div>
         <div id='background'>
         <div className='poster'>
-            <Link key={movieId} to={`/movies/${movieId}`}>
-            <img className='img poster' src={imgUrl}></img>
-
-            </Link>
+            <img className='img poster' src={imgUrl} onClick={async ()=>{
+                await MoviesApi.fetchMovieDetails(dispatch, movieId);
+                navigate(`/movies/${movieId}`,);
+            }}></img>
             <div id='rating'>
                 <Star id='star'/>
                 <h4 id='rating_title'>{rating}</h4>

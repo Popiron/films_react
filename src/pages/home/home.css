@@ -15,18 +15,13 @@ body {
     width: 223px;
     height: 80px;
   
-    /* Heading/H1 */
-  
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
     line-height: 80px;
-    /* identical to box height, or 125% */
   
     letter-spacing: -0.02em;
-  
-    /* Grey/50 */
   
     color: #EBEEF5;
   

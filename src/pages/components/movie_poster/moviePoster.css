@@ -16,6 +16,7 @@
 
  .img.poster {
     padding: 0px;
+    cursor: pointer;
 }
 
 #title {
