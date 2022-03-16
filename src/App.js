@@ -5,6 +5,7 @@ import { Navigate, Route, Router, Routes } from 'react-router';
 import React from 'react';
 import { Profile } from './pages/profile/profile';
 import { Details } from './pages/details/details';
+import { Login } from './pages/login/login';
 
 class App extends React.Component {
   render() {
@@ -14,6 +15,7 @@ class App extends React.Component {
           <Route path="/movies/:id" element={<Details/>}/>
           <Route path="/" element={<Navigate to="/movies"/>}/>
           <Route path="/profile" element={<Profile/>}/>
+          <Route path="/login" element={<Login/>}/>
         </Routes>
     )
   }

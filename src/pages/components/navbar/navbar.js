@@ -12,14 +12,14 @@ export const Navbar = (props) => {
         </Link>
         {props.isInsideProfile ? (
           (props.isAuthorized &&
-          <Link id="link" to="/movies" onClick={()=>{
+          <Link id="link" to="/login" onClick={()=>{
             localStorage.setItem('authorized','false');
         }}>
             <h2 id="navbutton">Log out</h2>
           </Link>)
         ) :
           (
-            <Link id="link" to="/profile">
+            <Link id="link" to="/login">
             <h2 id="navbutton">Profile</h2>
             </Link>
           )

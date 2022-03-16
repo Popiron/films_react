@@ -64,3 +64,11 @@
 
     font-family: 'Poppins', sans-serif;
 }
+
+#error_text {
+  width: 50%;
+  height: fit-content;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  color: white;
+}
